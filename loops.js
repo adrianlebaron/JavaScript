@@ -93,6 +93,7 @@ do {
 
 // both
 
+
 var players = [
   'Altuve',
   'Bregman',
