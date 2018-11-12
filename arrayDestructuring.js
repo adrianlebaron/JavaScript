@@ -22,3 +22,17 @@ console.log(
   ${repos}
   ${profile}
 );
+
+
+// CODING EXERCISE
+// Assign Kiwi, Iced Coffee, and Roses to their respective titles. 
+// Copy and paste their names to ensure the test will not fail because of a spelling error.
+//Create and name your array list here 
+const things = [
+  `Iced Coffee`,
+  `Roses`,
+  `Kiwi`// this has back tics and works
+
+]
+
+const [beverage, plant, fruit] = things;//insert variable name before this semi colon
