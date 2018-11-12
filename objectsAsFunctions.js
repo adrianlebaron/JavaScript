@@ -73,4 +73,35 @@ const openGraphMetadata = ({ title, summary = 'A DailySmarty Post' }) => {
 }
 
 openGraphMetadata(blog);
+// CODING EXERCISE
+// Write an object called user with an attribute for username and status. 
+// You may set the username to whatever string you wouldd like but the status must be set to "away". 
+// Then, write a function called loginEvent that changes the users status to "active". 
+// (Instead of a console.log use return). It must return "your_username is active"
 
+const user = {
+  userName:"adrianlebaron",
+  status: "away"
+}
+
+const loginEvent = ({userName, status}) => {
+  status = "active";
+  return `${userName} is  ${status}`
+}
+
+loginEvent (user)
+// CODING EXERCISE
+// You need to check on your bank info but can not get the information to show up.
+// Find the missing code and the one syntax error so the test can pass!
+
+const bank = {
+  accountNum: 454812259,
+  name: 'John Doe',
+  balance: 1257
+}
+
+const bankInfo = ({accountNum, name, balance}) => {
+  return (`Hi ${name}! Your current balance is $${balance}. Account#: ${accountNum}.`)
+}
+
+bankInfo(bank);

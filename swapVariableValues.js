@@ -11,11 +11,11 @@ it("when those cars won't pick a lane", function() {
 let playerOne = 'Tiffany';
 let playerTwo = 'Kristine';
 
-let tempPlayerOne = playerOne;
-let tempPlayerTwo = playerTwo;
+// let tempPlayerOne = playerOne;
+// let tempPlayerTwo = playerTwo;
 
-playerOne = tempPlayerTwo;
-playerTwo = tempPlayerOne;
+// playerOne = tempPlayerTwo;
+// playerTwo = tempPlayerOne;
 
 [playerOne, playerTwo] = [playerTwo, playerOne];
 
@@ -33,7 +33,7 @@ function roadRage() {
 
   
   //Write your code here to make the cars switch lanes
-  
+  [rightLane, leftLane] = [leftLane, rightLane]// I did this part and passed
   return (`That ${rightLane} and ${leftLane} won't pick a lane`)
 }
 
