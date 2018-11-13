@@ -3,7 +3,7 @@ function battingAverage () {
   var atBats = 300;
 
   return {
-    getCurrentAverage: function () {
+    getCurrent: function () {
       return (hits/atBats);
     },
     updateHitsAndAtBats: function (hit, atBat) {
