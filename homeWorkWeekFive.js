@@ -190,11 +190,40 @@ Student.welcome();
 
 
 
-heading = (size, title) => {
-  console.log(Object.values(heading))
-}
-const obj = {
-  `<h ${size}>${title}</${size}>
-};
+// weekfive html headingGen js
+my example 
 
-headingGen(2, "hello")
+const heading = {
+  size: 2,
+  title: 'hello'
+}
+
+const headingGen = ({ size, title }) => {
+  console.log(`<h${size}>${title}</h${size}>`);
+}
+
+headingGen(heading);
+
+//Jordans Example
+
+
+const headingGenerator = (title, typeOfHeading) => {
+  return `
+    <h${typeOfHeading}>${title}</h${typeOfHeading}>
+  `
+}
+
+headingGenerator('Greetings', 1);
+
+// done with class
+
+// class headingGen{
+//   heading({size, title}){
+//   this.size = size;
+//   this.title = title;
+//   }
+//   renderHeading(){
+//     console.log(`${this.size}: ${this.title}`);
+//   }
+// ()
+
