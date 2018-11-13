@@ -186,3 +186,22 @@ const brody = new Student({name: 'Brody', email: 'brody@hotmail.com', proglangua
 // brody.renderDetailsTwo();
 Student.disagree();
 Student.welcome();
+
+// my work
+
+const heading = {
+  size: 2,
+  title: 'hello'
+}
+
+const headingGen = ({ size, title }) => {
+  console.log(`<h${size}>${title}</h${size}>`);
+}
+
+headingGen(heading);
+
+const headingGenerator = (title, typeOfHeading) => {
+  return `
+  <h${typeOfHeading}>${title}</h${typeOfHeading}>`
+}
+headingGenerator('Greetings', 2); 
