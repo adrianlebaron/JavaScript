@@ -1,5 +1,2 @@
-function sum(numOne, Two) {
-  return numOne + numTwo;
-}
-
-console.log(sum(2, 5))
+// toThePowerOf(2, 3) => 8
+// reduce 
