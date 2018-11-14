@@ -187,7 +187,15 @@ const brody = new Student({name: 'Brody', email: 'brody@hotmail.com', proglangua
 Student.disagree();
 Student.welcome();
 
+<<<<<<< HEAD
 // my work
+=======
+
+
+
+// weekfive html headingGen js
+my example 
+>>>>>>> modernJSTools
 
 const heading = {
   size: 2,
@@ -200,8 +208,34 @@ const headingGen = ({ size, title }) => {
 
 headingGen(heading);
 
+<<<<<<< HEAD
 const headingGenerator = (title, typeOfHeading) => {
   return `
   <h${typeOfHeading}>${title}</h${typeOfHeading}>`
 }
 headingGenerator('Greetings', 2); 
+=======
+//Jordans Example
+
+
+const headingGenerator = (title, typeOfHeading) => {
+  return `
+    <h${typeOfHeading}>${title}</h${typeOfHeading}>
+  `
+}
+
+headingGenerator('Greetings', 1);
+
+// done with class
+
+// class headingGen{
+//   heading({size, title}){
+//   this.size = size;
+//   this.title = title;
+//   }
+//   renderHeading(){
+//     console.log(`${this.size}: ${this.title}`);
+//   }
+// ()
+
+>>>>>>> modernJSTools
