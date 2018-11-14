@@ -1,0 +1,68 @@
+<!-- Section Introduction for Modern JavaScript Error Management video -->
+<!-- https://bottega.devcamp.com/full-stack-development-javascript-python/guide/1446 -->
+
+<!-- Code -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lodash Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+  </head>
+  <body>
+
+  </body>
+
+  <script>
+    function siteComponent(func) {
+      return func();
+    }
+    try {
+      console.log(siteComponent('oops'));
+    } catch(e) {
+      console.log('An error occurred', e);
+    }
+    widget = () => {
+      return '<div>Hi there</div>';
+    }
+    console.log(siteComponent(widget));
+  </script>
+</html>
+
+<!-- How to Create a Custom Error Class in JavaScript video -->
+<!-- https://bottega.devcamp.com/full-stack-development-javascript-python/guide/1463 -->
+
+<!-- Code -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Error Management in JavaScript</title>
+  </head>
+  <body>
+  </body>
+
+  <script>
+    class DevcampError extends Error {
+      constructor(msg = 'An error occurred', ...params) {
+        super(...params);
+
+        this.msg = msg;
+      }
+    }
+
+
+    function siteComponent(func) {
+      return func();
+    }
+
+    try {
+      console.log(siteComponent('oops'));
+    } catch(e) {
+      throw new DevcampError('DevcampError', e);
+    }
+
+    widget = () => {
+      return '<div>Hi there</div>';
+    }
+  </script>
