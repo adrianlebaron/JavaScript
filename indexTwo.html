@@ -31,12 +31,13 @@
   <button onclick="contentToggle()">Toggle Content</button>
 </body>
 <script>
+  
   // const mainHeading = document.querySelector('.mainHeading');
   // const headings = document.querySelectorAll('div');
-  const widget = document.querySelector('.widget');
+  const widget = document.querySelector('.widget');        //querySelectorAll is another option but you would need a for in loop or for each loop
 
-  function contentToggle() {
-    if (widget.classList.contains('showElement')) {
+  function contentToggle() {Java  
+    if (widget.classList.contains('showElement')) {    
       widget.classList.remove('showElement');
       widget.classList.add('hideElement');
     } else {
