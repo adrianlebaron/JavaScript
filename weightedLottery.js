@@ -23,15 +23,6 @@ const weights = {
 weightedLottery(weights)
 
 
-random one in Java script
-def hex_rand():
-  poss_values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f']
-  end = []
-  for i in range(6):
-    end.append(str(poss_values[random.randint(0, 15)]))
-  print("#" + "".join(end))
-hex_rand()
-
 // Jordans example
 
 const weightedLottery = weights => {
