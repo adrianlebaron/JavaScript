@@ -1,0 +1,30 @@
+<!-- How to Add Hot Keys to a Web Application in Vanilla JavaScript video -->
+<!-- https://rails.devcamp.com/full-stack-development-javascript-python/guide/1707 -->
+<!-- https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes    notes for key codes--> 
+<!-- Code -->
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+
+<body>
+
+  <input type="text" id="searchBar">
+
+</body>
+
+<script>
+  const hotKeys = (e) => {
+    let windowEvent = window.event ? event : e;
+    if (windowEvent.keyCode == 66 && windowEvent.ctrlKey) {
+      const searchBar = document.querySelector('#searchBar');
+      searchBar.focus();
+    }
+  }
+  document.onkeydown = hotKeys;
+</script>
+
+</html>
