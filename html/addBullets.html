@@ -27,13 +27,44 @@
       <li class="todoItem">Quaerat velit deserunt reprehenderit, vel placeat impedit accusamus non, deleniti!</li>
     </ul>
   </div>
-
+ 
   <h2>Completed Todos</h2>
   <ul class="completedTodoWrapper">
     <div class="completed"></div>
   </ul>
 </body>
 
+<script>
+    const toDos = document.getItemByClassName('todos').values;
+      toDos.onclick = () => {
+        if (toDos.classList.contains('todoItem')) {
+          toDos.classList.remove('todoItem');
+          toDos.classList.add('completed');
+        } else {
+          toDos.classList.add('todoItem');
+          toDos.classList.remove('completed');
+        };
+      }
+  
+    console.log('I was Clicked');
+    
+  </script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
 <script>
     const todos = document.querySelectorAll('.todoItem');
     const completedTodos = document.querySelector('.completed');
@@ -46,6 +77,4 @@
       completedTodoWrapper.insertBefore(completedTodo, completedTodos);
       todo.remove();
     }))
-  </script>
-
-</html>
+  </script> -->
