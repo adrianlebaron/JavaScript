@@ -35,37 +35,6 @@
 </body>
 
 <script>
-    const toDos = document.getItemByClassName('todos').values;
-      toDos.onclick = () => {
-        if (toDos.classList.contains('todoItem')) {
-          toDos.classList.remove('todoItem');
-          toDos.classList.add('completed');
-        } else {
-          toDos.classList.add('todoItem');
-          toDos.classList.remove('completed');
-        };
-      }
-  
-    console.log('I was Clicked');
-    
-  </script>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-<script>
     const todos = document.querySelectorAll('.todoItem');
     const completedTodos = document.querySelector('.completed');
     const completedTodoWrapper = document.querySelector('.completedTodoWrapper');
@@ -77,4 +46,16 @@
       completedTodoWrapper.insertBefore(completedTodo, completedTodos);
       todo.remove();
     }))
-  </script> -->
+  </script>
+</html>
+
+<!-- Victor Laucas [10:04 AM]
+```<script>
+  const todo = document.querySelectorAll('.todoItem');
+  const completed = document.querySelector('.completed')
+  todo.forEach(item => {
+    item.addEventListener("click", (e) => {
+      completed.appendChild(item)
+    })
+  })
+</script>``` from Ryan -->
